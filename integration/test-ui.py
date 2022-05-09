@@ -31,7 +31,7 @@ def test_start(module_setup, app, domain, device_host):
 
 def test_login(selenium, app_domain):
     selenium.open_app()
-    selenium.driver.get("https://{0}/browser".format(app_domain))
+    # selenium.driver.get("https://{0}/browser".format(app_domain))
     selenium.screenshot('main')
 
 
