@@ -33,7 +33,7 @@ local build(arch, test_ui, dind) = [{
 
        {
             name: "build python",
-            image: "debian:buster-slim",
+            image: "docker:" + dind,
             commands: [
                 "./python/build.sh"
             ],
