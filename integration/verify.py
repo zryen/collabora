@@ -2,7 +2,6 @@ import os
 import pytest
 import requests
 import shutil
-from bs4 import BeautifulSoup
 from os.path import join
 from requests.auth import HTTPBasicAuth
 from requests.packages.urllib3.exceptions import InsecureRequestWarning
@@ -77,5 +76,4 @@ def test_reinstall(app_archive_path, device_host, device_password):
 
 def test_upgrade(app_archive_path, device_host, device_password):
     local_install(device_host, device_password, app_archive_path)
-
 
