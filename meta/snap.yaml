@@ -1,14 +1,13 @@
 apps:
   nginx:
-    command: bin/service.nginx.sh start
+    command: bin/service.nginx.sh
     user: collabora
     daemon: simple
     plugs:
     - network
     - network-bind
     restart-condition: always
-    stop-command: bin/service.nginx.sh stop
-  
+    
   server:
     command: bin/service.server.sh start
     daemon: simple
